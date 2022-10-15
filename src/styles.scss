@@ -2,8 +2,11 @@
 
 
 html{
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 body{
     height: 100%;
@@ -18,4 +21,27 @@ body {
     width: 100%;
     height: 100%;
     background: whitesmoke;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #009879; 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: whitesmoke; 
+  }
+  button{
+    margin-right: 10px;
+    background-color: darkgrey;
+    border: 1px solid white;
+    bottom: 6px;
   }
